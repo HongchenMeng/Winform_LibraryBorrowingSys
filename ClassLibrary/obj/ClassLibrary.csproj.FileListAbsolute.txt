@@ -1,0 +1,12 @@
+H:\MY Project (class)\图书管理系统(二) 12.28 (01)\ClassLibrary\bin\Debug\ClassLibrary.dll
+H:\MY Project (class)\图书管理系统(二) 12.28 (01)\ClassLibrary\bin\Debug\ClassLibrary.pdb
+H:\MY Project (class)\图书管理系统(二) 12.28 (01)\ClassLibrary\bin\Debug\Interop.Excel.dll
+H:\MY Project (class)\图书管理系统(二) 12.28 (01)\ClassLibrary\bin\Debug\Interop.Microsoft.Office.Core.dll
+H:\MY Project (class)\图书管理系统(二) 12.28 (01)\ClassLibrary\bin\Debug\Interop.VBIDE.dll
+H:\MY Project (class)\图书管理系统(二) 12.28 (01)\ClassLibrary\obj\Debug\ResolveAssemblyReference.cache
+H:\MY Project (class)\图书管理系统(二) 12.28 (01)\ClassLibrary\obj\Debug\Interop.Excel.dll
+H:\MY Project (class)\图书管理系统(二) 12.28 (01)\ClassLibrary\obj\Debug\Interop.Microsoft.Office.Core.dll
+H:\MY Project (class)\图书管理系统(二) 12.28 (01)\ClassLibrary\obj\Debug\Interop.VBIDE.dll
+H:\MY Project (class)\图书管理系统(二) 12.28 (01)\ClassLibrary\obj\Debug\ClassLibrary.csproj.ResolveComReference.cache
+H:\MY Project (class)\图书管理系统(二) 12.28 (01)\ClassLibrary\obj\Debug\ClassLibrary.dll
+H:\MY Project (class)\图书管理系统(二) 12.28 (01)\ClassLibrary\obj\Debug\ClassLibrary.pdb

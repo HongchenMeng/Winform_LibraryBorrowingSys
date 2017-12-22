@@ -1,0 +1,5 @@
+
+开发环境：ASP.NET + VS2010 + SQL2008    C/S架构
+
+
+用户名：admin    密码：admin

@@ -1,0 +1,12 @@
+bin\Debug\ClassLibrary.dll
+bin\Debug\ClassLibrary.pdb
+bin\Debug\Interop.Excel.dll
+bin\Debug\Interop.Microsoft.Office.Core.dll
+bin\Debug\Interop.VBIDE.dll
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\Interop.Excel.dll
+obj\Debug\Interop.Microsoft.Office.Core.dll
+obj\Debug\Interop.VBIDE.dll
+obj\Debug\ClassLibrary.csproj.ResolveComReference.cache
+obj\Debug\ClassLibrary.dll
+obj\Debug\ClassLibrary.pdb

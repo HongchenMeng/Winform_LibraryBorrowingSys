@@ -1,0 +1,551 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1C591E69-2607-4FB2-ADDC-30F9590623EA}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>图书管理系统_二_</RootNamespace>
+    <AssemblyName>图书管理系统%28二%29</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <HintPath>..\packages\CrystalDecisions.CrystalReports.Engine.1.0.0\lib\CrystalDecisions.CrystalReports.Engine.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <HintPath>..\packages\CrystalDecisions.ReportSource.1.0.0\lib\CrystalDecisions.ReportSource.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <HintPath>..\packages\CrystalDecisions.Shared.1.0.0\lib\CrystalDecisions.Shared.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <HintPath>..\packages\CrystalDecisions.Windows.Forms.1.0.0\lib\CrystalDecisions.Windows.Forms.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Interop.VBIDE, Version=5.3.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>bin\Debug\Interop.VBIDE.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\WINDOWS\assembly\GAC_MSIL\System.Web.Services\2.0.0.0__b03f5f7f11d50a3a\System.Web.Services.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmBookAbout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBookAbout.Designer.cs">
+      <DependentUpon>frmBookAbout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAbout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAbout.Designer.cs">
+      <DependentUpon>frmAbout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAdduser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAdduser.Designer.cs">
+      <DependentUpon>frmAdduser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBackup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBackup.Designer.cs">
+      <DependentUpon>frmBackup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBookCheck.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBookCheck.Designer.cs">
+      <DependentUpon>frmBookCheck.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBookCorA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBookCorA.Designer.cs">
+      <DependentUpon>frmBookCorA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBookManage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBookManage.Designer.cs">
+      <DependentUpon>frmBookManage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmHandleNote.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHandleNote.Designer.cs">
+      <DependentUpon>frmHandleNote.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBorrowReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBorrowReport.Designer.cs">
+      <DependentUpon>frmBorrowReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBorselect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBorselect.Designer.cs">
+      <DependentUpon>frmBorselect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDataDelete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDataDelete.Designer.cs">
+      <DependentUpon>frmDataDelete.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLodingJournal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLodingJournal.Designer.cs">
+      <DependentUpon>frmLodingJournal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMemorandum.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMemorandum.Designer.cs">
+      <DependentUpon>frmMemorandum.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPubChange.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPubChange.Designer.cs">
+      <DependentUpon>frmPubChange.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPublishing.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPublishing.Designer.cs">
+      <DependentUpon>frmPublishing.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmReaderChange.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReaderChange.Designer.cs">
+      <DependentUpon>frmReaderChange.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmChangepass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmChangepass.Designer.cs">
+      <DependentUpon>frmChangepass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLeavetime.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLeavetime.Designer.cs">
+      <DependentUpon>frmLeavetime.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmlogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmlogin.Designer.cs">
+      <DependentUpon>frmlogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.Designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmReaderAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReaderAdd.Designer.cs">
+      <DependentUpon>frmReaderAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmReaderCheck.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReaderCheck.Designer.cs">
+      <DependentUpon>frmReaderCheck.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmReaderManage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReaderManage.Designer.cs">
+      <DependentUpon>frmReaderManage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmReserBroInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReserBroInfo.Designer.cs">
+      <DependentUpon>frmReserBroInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSystemSet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSystemSet.Designer.cs">
+      <DependentUpon>frmSystemSet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmUsercontrol.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUsercontrol.Designer.cs">
+      <DependentUpon>frmUsercontrol.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmUserRework.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUserRework.Designer.cs">
+      <DependentUpon>frmUserRework.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LibraryDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LibraryDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LibraryReport1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LibraryReport1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmBookAbout.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmBookAbout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAbout.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmAbout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAdduser.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmAdduser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBackup.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmBackup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBookCheck.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmBookCheck.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBookCorA.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmBookCorA.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBookManage.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmBookManage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmHandleNote.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmHandleNote.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBorrowReport.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmBorrowReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBorselect.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmBorselect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDataDelete.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmDataDelete.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLodingJournal.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmLodingJournal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMemorandum.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmMemorandum.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPubChange.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmPubChange.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPublishing.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmPublishing.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReaderChange.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmReaderChange.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmChangepass.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmChangepass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLeavetime.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmLeavetime.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmlogin.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmlogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMain.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReaderAdd.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmReaderAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReaderCheck.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmReaderCheck.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReaderManage.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmReaderManage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReserBroInfo.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmReserBroInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSystemSet.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmSystemSet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUsercontrol.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmUsercontrol.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUserRework.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmUserRework.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LibraryReport1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>LibraryReport1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\关于.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\时钟2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\时钟.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\时钟1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\帮助.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\退出系统1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\添加2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\删除2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\主页1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\关闭子窗口3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="Resources\删除1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ClassLibrary\ClassLibrary.csproj">
+      <Project>{B367E911-18ED-4310-9A0B-2A20B9585BC1}</Project>
+      <Name>ClassLibrary</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\更改密码.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\用户设置.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\切换用户.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\键盘1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\退出2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\最小化.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\删除%28小%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\删除%28小%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\删除%28小%292.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\添加%28小%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="LibraryDataSet.xsc">
+      <DependentUpon>LibraryDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="LibraryDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LibraryDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="LibraryDataSet.xss">
+      <DependentUpon>LibraryDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Resources\保存.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Excel">
+      <Guid>{00020813-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>4</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{967B4E0D-AD0C-4609-AB67-0FA40C0206D8}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\default.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ie4.0buf.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\set.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\File Editing.ico" />
+    <None Include="Resources\Assistant Internet Editing.ico" />
+    <None Include="Resources\desktopicon.ico" />
+    <None Include="Resources\Assistant ISP Info.ico" />
+    <None Include="Resources\Assistant Mac OS.ico" />
+    <None Include="Resources\File Modem Setting.ico" />
+    <Content Include="Resources\login11.jpg" />
+    <None Include="Resources\警告.jpg" />
+    <None Include="Resources\Trash Full.ico" />
+    <None Include="Resources\SearchButton1.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
